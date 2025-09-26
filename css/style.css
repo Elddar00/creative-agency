@@ -39,6 +39,7 @@ header {
   top: 0;
   z-index: 99;
   width: 100%;
+  animation: slide-down 1s;
 }
 
 .main-navigation {
@@ -192,6 +193,7 @@ a:hover .btn-arrow-wrapper img {
   );
   color: transparent;
   background-clip: text;
+  animation: fade-in 1s;
 }
 
 .hero .hero-content h2 {
