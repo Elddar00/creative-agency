@@ -70,6 +70,9 @@ header {
   color: var(--green-color);
 }
 
+.main-navigation img {
+  filter: drop-shadow(0 0 10px var(--black-color));
+}
 .secondary-cta-btn {
   padding: 15px 20px;
   border-radius: 30px;
@@ -79,6 +82,7 @@ header {
   align-items: center;
   gap: 5px;
   position: relative;
+  background-color: var(--black-color);
 }
 
 .secondary-cta-btn:hover {
@@ -351,4 +355,21 @@ h2.section-heading {
     rgba(28, 28, 28, 1) 50%,
     rgba(0, 0, 0, 0) 100%
   );
+}
+
+.call-to-action {
+  padding: 100px 0;
+}
+
+.call-to-action p {
+  font-weight: 300;
+  font-size: 3.125rem;
+  margin-bottom: 50px;
+}
+
+.call-to-action p span {
+  animation: word-fade 2s both linear;
+  animation-timeline: view();
+  animation-range: entry 30% cover 60%;
+  animation-delay: calc(var(--i) * 100ms);
 }
