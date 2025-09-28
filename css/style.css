@@ -373,3 +373,56 @@ h2.section-heading {
   animation-range: entry 30% cover 60%;
   animation-delay: calc(var(--i) * 100ms);
 }
+
+.services {
+  padding: 80px 0;
+}
+
+.services .services-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.service-item {
+  position: relative;
+  min-height: 300px;
+  overflow: hidden;
+}
+
+.service-item h3 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.service-item p {
+  font-weight: 300;
+  max-width: 450px;
+}
+
+.service-item.span-2 {
+  grid-column: span 2;
+}
+
+.service-item video {
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+.service-item .service-item-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 30px;
+}
